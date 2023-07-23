@@ -26,7 +26,6 @@ class _MyBottomnavbarState extends State<MyBottomnavbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bottom Navigation Bar"), centerTitle: true),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.amber, //* selected button color will change
         currentIndex: _currentIndex,
