@@ -17,6 +17,7 @@ import 'package:atoz/DataTable/datatable.dart';
 import 'package:atoz/Date%20Picker/datepicker.dart';
 import 'package:atoz/Divider/divider.dart';
 import 'package:atoz/Drawer/drawer.dart';
+import 'package:atoz/Exit%20Dialog/exitdialog.dart';
 import 'package:atoz/Expanded/expanded.dart';
 import 'package:atoz/Floating%20Action%20Button/floatingactionbutton.dart';
 import 'package:atoz/GridView%20Builder/gridviewbuilder.dart';
@@ -26,6 +27,7 @@ import 'package:atoz/Indexed%20Stack/indexedstack.dart';
 import 'package:atoz/ListTile/listtile.dart';
 import 'package:atoz/ListView/listview.dart';
 import 'package:atoz/ListView%20Builder/listviewbuilder.dart';
+import 'package:atoz/Navigation%20Rail/navigationrail.dart';
 import 'package:atoz/Nestedscrollview/nestedscrollview.dart';
 import 'package:atoz/Page%20View/pageview.dart';
 import 'package:atoz/Rich%20Text/richtext.dart';
@@ -53,8 +55,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/Myindexedstack',
+      initialRoute: '/Myexitdialog',
       routes: {
+        '/Myexitdialog': (context) => Myexitdialog(),
+        '/Mynavigationrail': (context) => Mynavigationrail(),
         '/Myindexedstack': (context) => Myindexedstack(),
         '/Myheroanimation1': (context) => Myheroanimation1(),
         '/Myanimatedpositioned': (context) => Myanimatedpositioned(),
