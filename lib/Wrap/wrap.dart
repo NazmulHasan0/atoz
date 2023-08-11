@@ -22,6 +22,7 @@ class MyWrap extends StatelessWidget {
           // verticalDirection: VerticalDirection.up, //* last এর element প্রথমে চলে আসবে
           // textDirection: TextDirection.rtl, //* element গুলো rtl/ltr ভাবে থাকবে
           // direction: Axis.horizontal, //* element গুলো vertical/horizontal ভাবে থাকবে
+          crossAxisAlignment: WrapCrossAlignment.end,
           children: [
             ElevatedButton(onPressed: () {}, child: Text('Button 1')),
             ElevatedButton(onPressed: () {}, child: Text('Button 2')),

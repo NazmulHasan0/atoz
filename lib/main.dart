@@ -29,6 +29,7 @@ import 'package:atoz/ListView/listview.dart';
 import 'package:atoz/ListView%20Builder/listviewbuilder.dart';
 import 'package:atoz/Navigation%20Rail/navigationrail.dart';
 import 'package:atoz/Nestedscrollview/nestedscrollview.dart';
+import 'package:atoz/Opacity/opacity.dart';
 import 'package:atoz/Page%20View/pageview.dart';
 import 'package:atoz/Rich%20Text/richtext.dart';
 import 'package:atoz/Slider/slider.dart';
@@ -55,8 +56,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/Myexitdialog',
+      initialRoute: '/MyPageview',
       routes: {
+        '/Myopacity': (context) => Myopacity(),
         '/Myexitdialog': (context) => Myexitdialog(),
         '/Mynavigationrail': (context) => Mynavigationrail(),
         '/Myindexedstack': (context) => Myindexedstack(),

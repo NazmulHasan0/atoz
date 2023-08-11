@@ -1,3 +1,4 @@
+import 'package:atoz/Floating%20Action%20Button/herotag_page.dart';
 import 'package:flutter/material.dart';
 
 class MyFloatingactionbutton extends StatelessWidget {
@@ -12,12 +13,37 @@ class MyFloatingactionbutton extends StatelessWidget {
       ),
       body: null,
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple,
-        splashColor: Colors.yellow,
+        elevation: 12,
+        highlightElevation: 50, // button press করার সময় elevation দেখাবে
+        mouseCursor: MaterialStateMouseCursor.textable,
+        tooltip: "Save",
+        backgroundColor: Colors.blueAccent,
+        splashColor: Colors.yellow, // click করলে button এর color change হবে
         mini: true, // FAB ছোট হয়ে যাবে
-        onPressed: () {},
-        child: const Icon(Icons.favorite),
+        heroTag: 'tag1',
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => Myherotag()));
+        },
+        child: Icon(Icons.favorite),
       ),
     );
   }
 }
+
+
+/*
+  Scaffold(
+	  floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+  ),
+
+  Scaffold(
+	  floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+  ),
+
+  FloatingActionButton(
+	  shape: RoundedRectangleBorder(),
+  ),
+
+
+*/
