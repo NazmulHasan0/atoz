@@ -20,10 +20,12 @@ import 'package:atoz/Drawer/drawer.dart';
 import 'package:atoz/Exit%20Dialog/exitdialog.dart';
 import 'package:atoz/Expanded/expanded.dart';
 import 'package:atoz/Floating%20Action%20Button/floatingactionbutton.dart';
+import 'package:atoz/Gesture%20Detector/gesture.dart';
 import 'package:atoz/GridView%20Builder/gridviewbuilder.dart';
 import 'package:atoz/GridView/gridview.dart';
 import 'package:atoz/Image/image.dart';
 import 'package:atoz/Indexed%20Stack/indexedstack.dart';
+import 'package:atoz/InkWell/inkwell.dart';
 import 'package:atoz/ListTile/listtile.dart';
 import 'package:atoz/ListView/listview.dart';
 import 'package:atoz/ListView%20Builder/listviewbuilder.dart';
@@ -31,6 +33,7 @@ import 'package:atoz/Navigation%20Rail/navigationrail.dart';
 import 'package:atoz/Nestedscrollview/nestedscrollview.dart';
 import 'package:atoz/Opacity/opacity.dart';
 import 'package:atoz/Page%20View/pageview.dart';
+import 'package:atoz/RadioButton/radio_button.dart';
 import 'package:atoz/Rich%20Text/richtext.dart';
 import 'package:atoz/Slider/slider.dart';
 import 'package:atoz/Sliver%20AppBar/sliverappbar.dart';
@@ -56,8 +59,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/MyPageview',
+      initialRoute: '/Myinkwell',
       routes: {
+        '/Myinkwell': (context) => Myinkwell(),
+        '/Mygesture': (context) => Mygesture(),
+        '/Myradiobutton': (context) => Myradiobutton(),
         '/Myopacity': (context) => Myopacity(),
         '/Myexitdialog': (context) => Myexitdialog(),
         '/Mynavigationrail': (context) => Mynavigationrail(),
